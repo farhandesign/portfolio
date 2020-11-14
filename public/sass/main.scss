@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+@import '3-basics/global';
+
+@import '4-layout/navigation';
+@import '4-layout/intro';
+@import '4-layout/about-me';
+@import '4-layout/experience';
+@import '4-layout/my-projects';
+
+@import '5-pages/home';
