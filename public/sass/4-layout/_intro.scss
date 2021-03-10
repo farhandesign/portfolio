@@ -1,74 +1,100 @@
-.intro__container {
+.intro__section {
+	// background: lightgreen;
 	width: 100%;
-	height: 100vh;
+	height: 93vh;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	.intro {
-		height: 450px;
-		margin-bottom: 160px;
-		h3 {
+	.content {
+		// background: lightsalmon;
+		width: 100%;
+		height: auto;
+		margin: auto;
+		display: flex;
+		justify-content: flex-start;
+		flex-direction: column;
+		.hi {
 			font-size: 16px;
 			color: #63ffd9;
 			font-weight: 400;
 			word-spacing: 5px;
 			margin-left: 3px;
+			margin-bottom: 16px;
 		}
-		h1 {
-			font-size: 64px;
-			line-height: 32px;
-			margin: 0;
-		}
-		.h-name {
+		.name {
+			// background: lightseagreen;
 			color: #ccd6f6;
-			margin: 48px 0;
+			font-size: 64px;
+			margin-bottom: 16px;
 		}
-		.h-build {
+		.my-work {
+			// background: blue;
+			font-size: 64px;
 			color: #8892b0;
-			margin-bottom: 48px;
+			margin-bottom: 32px;
 		}
-
 		p {
-			width: 500px;
+			// background: pink;
 			color: #8892b0;
-			line-height: 28px;
-			margin-bottom: 64px;
 			font-weight: 500;
+			max-width: 500px;
+			line-height: 28px;
+			margin-bottom: 48px;
 		}
 		.intro__btn {
 			color: #63ffd9;
 			border: 1px solid #63ffd9;
 			border-radius: 4px;
+			width: 160px;
 			padding: 17px 30px;
 			font-size: 14px;
 			word-spacing: 4px;
+			margin-bottom: 56px;
+			cursor: pointer;
 		}
-	}
-}
-
-@media (max-width: 1200px) {
-	.intro {
-		.h-build {
-			line-height: 72px !important;
+		.intro__btn:hover {
+			background: rgba(100, 255, 218, 0.1);
 		}
 	}
 }
 
 @media (max-width: 768px) {
-	.intro__container {
-		.intro {
-			h1 {
-				font-size: 40px;
+	.intro__section {
+		.content {
+			.name,
+			.my-work {
+				font-size: 48px;
 			}
-			.h-name {
-				margin: 28px 0;
+			.name {
+				margin-bottom: 12px;
 			}
-			.h-build {
+			.my-work {
 				margin-bottom: 24px;
-				line-height: 48px !important;
 			}
+
 			p {
-				width: 90%;
+				font-size: 14px;
+				max-width: 450px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.intro__section {
+		.content {
+			.name,
+			.my-work {
+				font-size: 32px;
+			}
+			.name {
+				margin-bottom: 12px;
+			}
+			.my-work {
+				margin-bottom: 24px;
+			}
+
+			p {
+				font-size: 14px;
+				max-width: 450px;
 			}
 		}
 	}

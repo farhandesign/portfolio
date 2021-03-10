@@ -23,10 +23,14 @@
 				display: flex;
 				flex-direction: column;
 				a {
+					transition: 0.25s ease;
 					img {
 						width: 18px;
 						margin-bottom: 24px;
 					}
+				}
+				.social__links:hover {
+					transform: translateY(-5px);
 				}
 			}
 			.line {
@@ -45,13 +49,17 @@
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
-			p {
+			a {
 				transform: rotate(90deg);
 				font-size: 14px;
 				color: #a8b2d1;
 				font-weight: 500;
 				letter-spacing: 1px;
 				margin: 1px;
+				transition: 0.25s ease;
+			}
+			.col__email:hover {
+				color: #63ffd9;
 			}
 			.line {
 				background: #a8b2d1;
@@ -73,10 +81,14 @@
 	.layout {
 		.content {
 			.left__col {
-				width: 106px;
+				width: 80px;
 			}
 			.right__col {
-				width: 106px;
+				width: 80px;
+			}
+			.main-container {
+				width: 100%;
+				margin: 0 100px;
 			}
 		}
 	}
@@ -95,6 +107,18 @@
 			.main-container {
 				width: 100%;
 				margin: 0 48px;
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.layout {
+		width: 100%;
+		.content {
+			.main-container {
+				width: 100%;
+				margin: 0 24px;
 			}
 		}
 	}

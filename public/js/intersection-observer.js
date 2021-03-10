@@ -1,8 +1,8 @@
 const header = document.querySelector('nav');
-const sectionOne = document.querySelector('.my__name');
+const sectionOne = document.querySelector('.hi');
 
 const sectionOneOptions = {
-	rootMargin: '-100px 0px 0px 0px',
+	rootMargin: '-200px 0px 0px 0px',
 	threshold: 0.05
 };
 

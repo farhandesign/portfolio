@@ -5,24 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farhan Hasan</title>
     <link rel="stylesheet" href="/sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="layout">
         <%- include('../partials/navbar') %> 
         <div class="content">
-            <div class="left__col">
-                <div class="social-media">
-                    <a href=""><img src="./img/github.svg" alt=""></a>
-                    <a href=""><img src="./img/linkedin.svg" alt=""></a>
-                    <a href=""><img src="./img/slack.svg" alt=""></a>
-                </div>
-                <div class="line"></div>
-            </div>
+            <%- include('../partials/left-col') %> 
             <%- body %>
-            <div class="right__col">
-                <p>farhan.design@outlook.com</p>
-                <div class="line"></div>
-            </div>
+            <%- include('../partials/right-col') %> 
         </div>
     </div>  
 </body>
